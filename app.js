@@ -32,13 +32,14 @@ function displayCity(event) {
 }
 
 let form = document.querySelector("#password-form");
-form.addEventListener("submit", displayCity);
+form.addEventListener("submit", handleSubmit);
 
 ////////////////////////////////////////////
 
-function handlePosition(position) {
+function handleSubmit(event) {
+  event.preventDefault();
   let input = document.querySelector("#search-input");
-  let cityName = `${input.value}`;
+  let cityName = input.value;
   console.log(cityName);
   let apiKey = "03d4a24ecf9349320cceeda75640d865";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
@@ -47,13 +48,13 @@ function handlePosition(position) {
   axios.get(apiUrl).then(showResponse);
 }
 
-navigator.geolocation.getCurrentPosition(handlePosition);
+//navigator.geolocation.getCurrentPosition(handlePosition);
 
 function showResponse(response) {
-  let temperatureDisplay = document.querySelector("current-temperature");
+  let temperatureDisplay = document.querySelector("h1");
   console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
-  temperatureDisplay.innerHTML = `${temperature}`;
+  temperatureDisplay.innerHTML = `${temperature} ºC`;
 }
 
 ////////////////////////////////////////////
