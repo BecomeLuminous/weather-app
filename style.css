@@ -1,11 +1,70 @@
+h1 {
+  color: blue;
+}
+
 body {
-  background: coral;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0;
+  color: #813750;
 }
 
 h1 {
-  color: cornflowerblue;
+  font-size: 80px;
+  font-weight: 600;
+  margin: 30px 0 10px;
+  color: #813750;
+  line-height: 10px;
 }
 
-p {
-  color: cornflowerblue;
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.search {
+  display: block;
+  margin: 0 0 20px 0;
+  position: relative;
+  right: 30px;
+  text-align: left;
+  width: 200px;
+  background: #ffe29f;
+  border: #ffa99f;
+}
+
+.card-body {
+  margin: 50px 300px;
+  max-width: 740px;
+  padding: 30px 20px;
+  background-image: linear-gradient(
+    -225deg,
+    #ffe29f 0%,
+    #ffa99f 48%,
+    #ff719a 100%
+  );
+}
+
+.container {
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 600px;
+}
+
+.forecast {
+  margin: 20px 0;
+}
+
+.temperatures {
+  margin: 20px 0;
+}
+
+.weather-prediction {
+  font-size: 12px;
+}
+
+.forecast-title {
+  text-align: left;
+  padding: 0;
+  margin: 20px auto;
+  font-weight: 1000;
 }

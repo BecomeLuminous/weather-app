@@ -1,17 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Weather</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-
-    <title>Document</title>
+    <link href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
   </head>
-  <body>
-    <h1>SheCodes Plus</h1>
-    <p>Learn how to code really fast!</p>
 
-    <script src="app.js"></script>
+  <body>
+    <div class="card">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <form id="password-form">
+              <input 
+                type="search"
+                class="form-control ds-input search"
+                id="search-input"
+                placeholder="Search..."
+                autocomplete="off"
+              
+              />
+            </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+                <div class="row city"><h2>Enter a city</h2>
+          
+                </div>
+                <div class="row"><span class="country"></span>France</div>
+                <div class="row"><span class="day-hour"></span></div>
+            </div>
+            <div class="col-6 current-temperature">
+                <h1>15ºC</h1><br />
+                <span class="sky-d-day">Sun and Clouds</span>
+              </div>
+          </div>
+          
+              <p class="forecast-title">Forecast for the next 5 days</p>
+            
+              <div class="row days">
+                  <div class="col"><span class="day1">Monday</span>
+                  </div>
+                  <div class="col"><span class="day2">Tuesday</span>
+                  </div>
+                  <div class="col"><span class="day3">Wednesday</span>
+                  </div>
+                  <div class="col"><span class="day4">Thursday</span>
+                  </div>
+                  <div class="col"><span class="day5">Friday</span>
+                  </div>
+              </div>
+              <div class="row temperatures">
+                  <div class="col">16ºC
+                  </div>
+                  <div class="col">15ºC
+                  </div>
+                  <div class="col">12ºC
+                  </div>
+                  <div class="col">14ºC
+                  </div>
+                  <div class="col">16ºC
+                  </div>
+                  </div>
+              <div class="row weather-prediction">
+                    <div class="col">Sun <br />Clouds
+                    </div>
+                    <div class="col">Sun <br />Clouds
+                    </div>
+                    <div class="col">Rain <br />Clouds
+                    </div>
+                    <div class="col">Clouds 
+                    </div>
+                    <div class="col">Sun 
+                    </div>
+                    </div>
+        </div>
+
+      
+    <script src="src/index.js"></script>
   </body>
 </html>
