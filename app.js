@@ -32,8 +32,8 @@ function displayCity(event) {
 }
 
 let form = document.querySelector("#password-form");
+form.addEventListener("submit", displayCity);
 form.addEventListener("submit", handleSubmit);
-
 ////////////////////////////////////////////
 
 function handleSubmit(event) {
