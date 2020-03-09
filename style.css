@@ -65,5 +65,10 @@ h2 {
   text-align: left;
   padding: 0;
   margin: 20px auto;
-  font-weight: 1000;
+  font-weight: 800;
+}
+
+.weather-details {
+  font-weight: 800;
+  text-transform: capitalize;
 }
