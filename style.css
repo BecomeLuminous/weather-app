@@ -72,3 +72,7 @@ h2 {
   font-weight: 800;
   text-transform: capitalize;
 }
+
+#day-hour {
+  margin-bottom: 30px;
+}
