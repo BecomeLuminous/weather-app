@@ -21,6 +21,18 @@ h2 {
   font-weight: 500;
 }
 
+button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  color: grey;
+  border: none;
+  border-radius: 1mm;
+  background-color: #ffe29f;
+  padding: 6px 12px;
+}
+
 .search {
   display: block;
   margin: 0 0 20px 0;
@@ -32,7 +44,7 @@ h2 {
 }
 
 .card-body {
-  margin: 50px 300px;
+  margin: 50px 300px 10px;
   max-width: 740px;
   padding: 30px 20px;
   background-image: linear-gradient(
@@ -75,4 +87,9 @@ h2 {
 
 #day-hour {
   margin-bottom: 30px;
+}
+
+#footer {
+  font-size: 10px;
+  margin: 0 300px;
 }

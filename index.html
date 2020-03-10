@@ -3,17 +3,20 @@
   <head>
     <title>Weather app Sarah Gaillard</title>
     <meta charset="UTF-8" />
-   
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-   
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-   <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -22,45 +25,47 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-                <form id="password-form">
-              <input 
-                type="search"
-                class="form-control ds-input search"
-                id="search-input"
-                placeholder="Search..."
-                autocomplete="off"
-              
-              />
-            </form>
+              <form id="password-form">
+                <input
+                  type="search"
+                  class="form-control ds-input search"
+                  id="search-input"
+                  placeholder="Search..."
+                  autocomplete="off"
+                />
+              </form>
             </div>
           </div>
           <div class="row">
             <div class="col-6">
-                <h2 id="city">Enter a city</h2>        
-                    
-          
-                <div id="day-hour"></div>
-                <div class="weather-details"><span id="description"></span>
+              <h2 id="city">Enter a city</h2>
+
+              <div id="day-hour"></div>
+              <div class="weather-details">
+                <span id="description"></span>
                 <br />
                 <span id="wind"></span>
                 <br />
-                <span id="humidity"></span></div>
+                <span id="humidity"></span>
+              </div>
             </div>
             <div class="col-6 current-temperature">
-                <h1 id="temperature"></h1><br />
-                <div id="fahrenheitTemperature"></div>
-                <img src=""
-                alt=""
-                id="icon" />
-
-                
-                
-              </div>
+              <h1 id="temperature"></h1>
+              <br />
+              <div id="fahrenheitTemperature"></div>
+              <img src="" alt="" id="icon" />
+            </div>
           </div>
-          
         </div>
-<footer><a href="https://github.com/BecomeLuminous/weather-app" target="_blank">Open-source code</a> by Sarah Gaillard</footer>
-      
+      </div>
+      <p id="footer">
+        <a href="https://github.com/BecomeLuminous/weather-app" target="_blank"
+          >Open-source code</a
+        >
+        by Sarah Gaillard
+      </p>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
