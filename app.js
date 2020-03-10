@@ -24,6 +24,8 @@ let dateAndTime = document.querySelector("#day-hour");
 dateAndTime.innerHTML = `${formattedDate}`;
 ////////////////////////////////////////////
 
+/////////////////////////////
+
 function weatherUpdate(response) {
   console.log(response.data);
   event.preventDefault();
@@ -76,3 +78,7 @@ function handleSubmit(event) {
 let form = document.querySelector("#password-form");
 form.addEventListener("submit", handleSubmit);
 form.addEventListener("submit", weatherUpdate);
+
+//////////////////
+
+search("Timbuktu");
