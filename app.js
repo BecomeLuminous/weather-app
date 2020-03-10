@@ -14,8 +14,13 @@ function formatDate(date) {
   let dayNumber = date.getDay();
   let day = days[dayNumber];
   let hour = date.getHours();
+  if (hour < 10) {
+    hour = `0${hours}`;
+  }
   let minutes = date.getMinutes();
-
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   return `${day} ${hour}:${minutes} `;
 }
 let currentDate = new Date();
